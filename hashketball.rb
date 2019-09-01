@@ -128,7 +128,7 @@ def num_points_scored(player)
           binding.pry
         
     
-      end 
+      
     
     end 
     
