@@ -199,7 +199,7 @@ def big_shoe_rebounds
         name_hash.each do | name, stats |
           if stats[:shoe] > max_shoe
           max_shoe = stats[:shoe] 
-          clown_rebounds = stats[]
+          clown_rebounds = stats[:rebounds]
           end 
         end
       end 
