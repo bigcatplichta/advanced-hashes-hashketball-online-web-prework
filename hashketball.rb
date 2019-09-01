@@ -184,7 +184,7 @@ def player_stats(player_name)
       player_list.each do | name_hash |
         name_hash.each do | name, stats |
           return stats if name == player_name
-          binding.pry
+          # binding.pry
         end
       end 
       end
