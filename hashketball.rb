@@ -168,6 +168,7 @@ def player_numbers(team_name)
         if key == :players
           player_list.each do | name_hash |
             name_hash.each do | name, stats|
+              
               jersey_numbers << stats[:number]
             end 
             binding.pry
