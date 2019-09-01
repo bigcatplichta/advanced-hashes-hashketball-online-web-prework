@@ -143,12 +143,12 @@ def shoe_size(player)
 end
 
 def team_colors(team_name)
- 
+ color_array = []
   game_hash.each do | team, tm_info |
-    tm_info.each do | key, player_list |
-      if key == :players
-        player_list.each do | name_hash |
-          name_hash.each { | name, stats | return stats[:points] if name == player }
+    tm_info.each do | key, colors |
+      if key == :colors
+        key.each { |color| color_array.push(color) } 
+        binding.pry
         end 
       end 
     end 
