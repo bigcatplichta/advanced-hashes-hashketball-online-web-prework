@@ -146,12 +146,7 @@ def team_colors(team_name)
  color_array = []
   game_hash.each do | team, tm_info |
     if tm_info[:team_name] == team_name
-      tm_info.each do | key, colors |
-        if key == :colors
-          color_array = colors
-          # binding.pry
-        end 
-      end
+      tm_info.each { | key, colors | color_array = colors if key == :colors }
     end
   end 
   color_array
