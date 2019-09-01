@@ -124,6 +124,7 @@ def num_points_scored(player)
     tm_info.each do | key, value |
       
       if key[player] 
+      binding.pry
         value.each do | player_stats |
           player_stats.each do | name, (stats) | 
             points = stats[:points] if name == player
