@@ -126,7 +126,7 @@ def num_points_scored(player)
       
       if key == :players 
         value.each do | player_stats |
-          player_stats.each { | 
+          player_stats.each { | name, stats | }
         binding.pry 
         end
       end
