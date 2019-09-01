@@ -160,4 +160,15 @@ def team_names
   team_array
 end 
 
+def player_numbers(team_name)
+  jersey_numbers = []
+  game_hash.each do | team, tm_info |
+    if tm_info[:team_name] == team_name
+      tm_info.each do | key, player list |
+        binding.pry
+      end
+    end
+  end
+end
+
 
