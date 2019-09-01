@@ -167,7 +167,7 @@ def player_numbers(team_name)
       tm_info.each do | key, player_list |
         if key == :players
           player_list.each do | name, stats |
-            jersy_numbers << stats[:number]
+            jersey_numbers << stats[:number]
           binding.pry
           end
         end
