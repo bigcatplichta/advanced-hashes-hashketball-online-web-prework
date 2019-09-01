@@ -125,6 +125,7 @@ def num_points_scored(player)
       if key == :players
         player_list.each do | name_hash |
           name_hash.each do | name, stats |
+            return stats[:points] if name == player 
             binding.pry
           end 
         end 
