@@ -238,13 +238,14 @@ def winning_team
     tm_info.each do | key, player_list |
       if key == :players
         player_list.each do | name_hash |
-          if game_hash[:home][:players]
+          if game_hash[:home][:players].include?(name_hash)
             name_hash.each do | name, stats |
               
                 binding.pry
               
             end
           end
+        end
       end
     end
   end
