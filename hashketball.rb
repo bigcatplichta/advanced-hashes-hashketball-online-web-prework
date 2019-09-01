@@ -125,11 +125,11 @@ def num_points_scored(player)
     tm_info.each do | key, value |
       if key == :players 
         key.each do | name |
-          
+          binding.pry
         end
     
       end 
-    binding.pry
+    
     end 
     
   end
