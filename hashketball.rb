@@ -239,12 +239,12 @@ def winning_team
       if key == :players
         player_list.each do | name_hash |
           if game_hash[:home][:players]
-          name_hash.each do | name, stats |
-            
-              binding.pry
+            name_hash.each do | name, stats |
+              
+                binding.pry
+              
             end
           end
-        end
       end
     end
   end
