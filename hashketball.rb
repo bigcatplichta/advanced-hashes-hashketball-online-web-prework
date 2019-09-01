@@ -248,5 +248,5 @@ def winning_team
       end
     end
   end
-            binding.pry
+  if home_score.sum 
 end
