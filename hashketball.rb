@@ -205,6 +205,6 @@ def big_shoe_rebounds
       end 
     end 
     end
+    clown_rebounds
   end
-  return clown_rebounds
 end
