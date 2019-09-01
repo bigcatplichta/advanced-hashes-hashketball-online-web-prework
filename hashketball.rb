@@ -244,9 +244,9 @@ def winning_team
           elsif game_hash[:away][:players].include?(name_hash)
             name_hash.each { | name, stats | away_score << stats[:points] }
           end
-          binding.pry
         end
       end
     end
   end
+            binding.pry
 end
