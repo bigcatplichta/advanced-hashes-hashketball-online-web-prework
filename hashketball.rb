@@ -241,6 +241,7 @@ def winning_team
           name_hash.each do | name, stats |
             if game_hash[:home][:players]
               binding.pry
+            end
           end
         end
     end
