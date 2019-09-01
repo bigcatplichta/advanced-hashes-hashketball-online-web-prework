@@ -232,18 +232,17 @@ def most_points_scored
 end
 
 def winning_team
-  high_score = 0
+  home_score = []
+  away_score = []
   
   game_hash.each do | team, tm_info |
     tm_info.each do | key, player_list |
       if key == :players
         player_list.each do | name_hash |
           if game_hash[:home][:players].include?(name_hash)
-            name_hash.each do | name, stats |
-              
-                binding.pry
-              
-            end
+            name_hash.each { | name, stats | home_score << stats[:points] }
+          elsif game_hash[:away][:players].include?(name_hash)
+            name_hash.each { | name, stats | away_score << stats[:points] }
           end
         end
       end
