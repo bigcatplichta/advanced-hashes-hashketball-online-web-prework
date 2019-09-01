@@ -168,11 +168,9 @@ def player_numbers(team_name)
         if key == :players
           player_list.each do | name, stats |
             jersy_numbers << stats[:number]
-          
+          binding.pry
           end
         end
-        
-        binding.pry
       end
     end
   end
