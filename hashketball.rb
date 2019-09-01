@@ -128,12 +128,13 @@ def num_points_scored(player)
         value.each do | player_stats |
           player_stats.each do | name, (stats) | 
             points = stats[:points] if name == player
-          binding.pry 
+          # binding.pry 
           end
         end
       end
     end 
   end
+  points
 end
 
 
