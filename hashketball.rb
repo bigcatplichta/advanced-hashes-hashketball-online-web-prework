@@ -165,6 +165,13 @@ def player_numbers(team_name)
   game_hash.each do | team, tm_info |
     if tm_info[:team_name] == team_name
       tm_info.each do | key, player_list |
+        if key == :players
+          player_list.each do | name, stats |
+            jersy_numbers << stats[:number]
+          
+          end
+        end
+        
         binding.pry
       end
     end
