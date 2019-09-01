@@ -220,7 +220,7 @@ def most_points_scored
         player_list.each do | name_hash |
           name_hash.each do | name, stats |
             if stats[:points] > max_points
-            max_shoe = stats[:shoe] 
+            max_points = stats[:points] 
             mvp = name
             end 
           end
