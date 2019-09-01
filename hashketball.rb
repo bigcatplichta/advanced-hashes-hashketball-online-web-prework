@@ -191,6 +191,7 @@ end
 def big_shoe_rebounds
   max_shoe = 0
   
+  
   game_hash.each do | team, tm_info |
     tm_info.each do | key, player_list |
     if key == :players  
@@ -198,12 +199,11 @@ def big_shoe_rebounds
         name_hash.each do | name, stats |
           if stats[:shoe] > max_shoe
           max_shoe = stats[:shoe] 
-          clown = name 
+          clown_rebounds = stats[]
           end 
         end
       end 
     end 
     end
   end
-  clown
 end
