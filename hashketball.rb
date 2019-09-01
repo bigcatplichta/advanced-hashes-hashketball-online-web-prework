@@ -149,7 +149,7 @@ def team_colors(team_name)
       if key == :colors
         key.each { |color| color_array.push(color) } 
         binding.pry
-        end 
+        
       end 
     end 
   end 
