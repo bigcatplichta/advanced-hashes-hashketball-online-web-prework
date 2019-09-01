@@ -209,3 +209,24 @@ def big_shoe_rebounds
   end
   return clown_rebounds
 end
+
+def most_points_scored
+  max_points = 0
+  mvp = ""
+  
+  game_hash.each do | team, tm_info |
+    tm_info.each do | key, player_list |
+      if key == :players  
+        player_list.each do | name_hash |
+          name_hash.each do | name, stats |
+            if stats[:points] > max_points
+            max_shoe = stats[:shoe] 
+            mvp = name
+            end 
+          end
+        end 
+      end 
+    end
+  end
+  return mvp
+end
