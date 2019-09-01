@@ -200,11 +200,11 @@ def big_shoe_rebounds
           if stats[:shoe] > max_shoe
           max_shoe = stats[:shoe] 
           clown_rebounds = stats[:rebounds]
+          binding.pry
           end 
         end
       end 
     end 
     end
-    clown_rebounds
   end
 end
