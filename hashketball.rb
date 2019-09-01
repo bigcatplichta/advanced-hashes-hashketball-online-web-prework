@@ -177,7 +177,6 @@ def player_numbers(team_name)
 end
 
 def player_stats(player_name)
-  player_hash = {}
   game_hash.each do | team, tm_info |
     tm_info.each do | key, player_list |
       if key == :players
@@ -189,4 +188,6 @@ def player_stats(player_name)
   end
 end
 
-
+def big_shoe_rebounds
+  
+end
