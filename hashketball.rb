@@ -148,10 +148,11 @@ def team_colors(team_name)
     tm_info.each do | key, colors |
       if key == :colors
         color_array = colors
-        color_array
+        
       end 
     end 
   end 
+  color_array
 end
 
 
