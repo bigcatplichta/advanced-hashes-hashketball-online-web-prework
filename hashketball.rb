@@ -230,3 +230,19 @@ def most_points_scored
   end
   return mvp
 end
+
+def winning_team
+  high_score = 0
+  
+  game_hash.each do | team, tm_info |
+    tm_info.each do | key, player_list |
+      if key == :players
+        player_list.each do | name_hash |
+          name_hash.each do | name, stats |
+            if game_hash[:home][:players]
+              binding.pry
+          end
+        end
+    end
+  end
+end
