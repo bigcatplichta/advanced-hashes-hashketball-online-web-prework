@@ -176,4 +176,17 @@ def player_numbers(team_name)
   jersey_numbers 
 end
 
+def player_stats(player_name)
+  player_hash = {}
+  game_hash.each do | team, tm_info |
+    tm_info.each do | key, player_list |
+      player_list.each do | name_hash |
+        name_hash.each do | name, stats |
+          return stats if name == player_name
+          binding.pry
+        end
+      end
+    end
+  end
+end
 
