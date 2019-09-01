@@ -189,5 +189,12 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  
+  game_hash.each do | team, tm_info |
+    tm_info.each do | key, player_list |
+      player_list.each do | name_hash |
+      
+      binding.pry
+      end 
+    end
+  end
 end
