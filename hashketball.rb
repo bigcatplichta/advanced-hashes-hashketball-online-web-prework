@@ -254,3 +254,21 @@ def winning_team
     game_hash[:away][:team_name]
   end
 end
+
+def player_with_longest_name
+  max_length = 0
+  longest_name = ""
+  
+  game_hash.each do | team, tm_info |
+    tm_info.each do | key, player_list |
+      if key == :players
+        player_list.each do | name_hash |
+          name_hash.each do | name, stats |
+            
+            name.length = max_length if name.length > max_length
+          end
+        end
+      end
+    end
+  end
+end
