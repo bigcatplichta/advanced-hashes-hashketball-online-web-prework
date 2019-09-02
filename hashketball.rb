@@ -267,7 +267,6 @@ def player_with_longest_name
             if name.length > max_length
               max_length = name.length 
               longest_name = name 
-              binding.pry 
             end
           end
         end
