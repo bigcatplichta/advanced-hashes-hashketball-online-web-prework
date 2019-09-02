@@ -249,8 +249,8 @@ def winning_team
     end
   end
   if home_score.reduce > away_score.reduce
-    home_score.reduce
+    game_hash[:home][:team_name]
   else
-    away_score.reduce
+    game_hash[:away][:team_name]
   end
 end
