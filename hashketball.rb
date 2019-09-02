@@ -285,8 +285,8 @@ def long_name_steals_a_ton?
       if key == :players
         player_list.each do | name_hash |
           name_hash.each do | name, stats |
-            if stats[:steals].length > max_length
-              max_length = stats[:steals].length 
+            if stats[:steals] > max_length
+              max_length = stats[:steals]
               stealer = name
             end
           end
