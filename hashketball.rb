@@ -265,7 +265,7 @@ def player_with_longest_name
         player_list.each do | name_hash |
           name_hash.each do | name, stats |
             if name.length > max_length
-              name.to_s.length = max_length 
+              name.length = max_length 
               longest_name = name 
               binding.pry 
             end
