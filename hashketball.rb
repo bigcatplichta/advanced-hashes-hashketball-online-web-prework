@@ -277,5 +277,18 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton?
-  
+  game_hash.each do | team, tm_info |
+    tm_info.each do | key, player_list |
+      if key == :players
+        player_list.each do | name_hash |
+          name_hash.each do | name, stats |
+            if name.length > max_length
+              max_length = name.length 
+              longest_name = name 
+            end
+          end
+        end
+      end
+    end
+  end
 end
