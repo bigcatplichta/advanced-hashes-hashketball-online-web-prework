@@ -252,4 +252,5 @@ def winning_team
     home_score.reduce
   else
     away_score.reduce
+  end
 end
