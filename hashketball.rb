@@ -293,5 +293,6 @@ def long_name_steals_a_ton?
         end
       end
     end
+    stealer == player_with_longest_name
   end
 end
